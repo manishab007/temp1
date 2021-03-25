@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+<!--
+body
+	{font-family:Arial,Helvetica,sans-serif}
+.modal
+	{display:none;
+	z-index:1;
+	padding-top:100px;
+	left:0;
+	top:0;
+	width:100%;
+	height:200%;
+	overflow:auto;
+	background-color:rgb(0,0,0);
+	background-color:rgba(0,0,0,0.4)}
+.modal-content
+	{background-color:#fefefe;
+	margin:auto;
+	padding:20px;
+	border:1px solid #888;
+	width:80%;
+	height:170px;
+	top:100px}
+-->
+</style>
+</head>
+<body style="background-color:#f1f1f6">
+<div class="content-wrapper">
+<div class=" col-lg-12" style="background-color:#112D4E; height:100px; align-items:center; text-align:center; color:white">
+<h1 style="color:white; text-align:center"><b>Dexter</b></h1>
+</div>
+<div class="box box-danger">
+<div class="box-body">
+<div class=" col-lg-12">
+<div class=" col-lg-4"></div>
+<div class=" col-lg-4"><label class=" control-label " style="text-align:center"><br>
+<br>
+<br>
+Line of Business </label><select class="form-control chosen-select syn" id="portfolio_type" name="portfolio_type">
+<option value="">Select Line Of Business</option> <option value="Retail">Retail</option>
+<option value="AMG">AMG</option> <option value="Mortgage">Mortgage</option> </select>
+</div>
+<div class=" col-lg-4"></div>
+</div>
+<div class=" col-lg-12">
+<div class=" col-lg-4"></div>
+<div class=" col-lg-4"><label class=" control-label" style="text-align:left"><br>
+Product </label><select class="form-control chosen-select syn" id="products" size="1">
+<option value="" disabled="" selected="">Select Product</option> <option></option>
+</select> </div>
+<div class=" col-lg-4"></div>
+</div>
+<div id="text34">
+<div class=" col-lg-12">
+<div class=" col-lg-4"></div>
+<div class=" col-lg-4"><label class=" control-label " style="text-align:left">Number of Accounts
+</label><input type="text" id="numberAccounts" name="no_of_accounts" class="form-control">
+</div>
+<div class=" col-lg-4"></div>
+</div>
+<div class=" col-lg-12">
+<div class=" col-lg-4"></div>
+<div class=" col-lg-4"><label class=" control-label " style="text-align:left">Business Rules
+</label><br>
+<select class="form-control chosen-select syn" id="rules"> <option value="">Select the business rule
+</option> <option value="Retai">All Installment Loans</option> <option value="AM">
+Installment Loans with Active accounts</option> <option value="Mtgae">Installment Loan with Balance
+</option> </select> </div>
+<div class=" col-lg-4"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=" col-lg-12">
+<div class="col-lg-5"></div>
+<div class="col-lg-2" style="margin-top:20px"><button type="submit" class="btn btn-primary" name="submit" id="fetch" value="submit" style="padding:0 18px; height:29px; margin-left:20px; text-align:center; font-size:12px; font-weight:bold; color:#527881; background:#cde5ef; border:1px solid; border-color:#b4ccce #b3c0c8 #9eb9c2; border-radius:16px; outline:0; box-sizing:content-box">
+Fetch</button> </div>
+<div class="col-lg-5"></div>
+</div>
+<div></div>
+<div id="table" class="modal">
+<div class="modal-content">
+<table style="width:100%">
+<div style="background-color:#112D4E; height:20px; align-items:center; text-align:center; color:white; width:100%">
+Dexter Query Results</div>
+<tbody>
+<tr>
+<th>Account Number</th>
+<th>Account Name</th>
+<th>Account Balance</th>
+<th>Account Status</th>
+</tr>
+<tr>
+<td>60043289</td>
+<td>Credit</td>
+<td>1000</td>
+<td>Active</td>
+</tr>
+<tr>
+<td>70043289</td>
+<td>Savings</td>
+<td>5000</td>
+<td>Closed</td>
+</tr>
+<tr>
+<td>35452289</td>
+<td>Wealth</td>
+<td>5000</td>
+<td>Active</td>
+</tr>
+</tbody>
+</table>
+<div class="col-lg-12">
+<div class="col-lg-5"></div>
+<div class="col-lg-2"><button type="submit" class="btn btn-primary closebutton" name="submit" id="btnSubmit" value="submit">
+Close</button> </div>
+<div class="col-lg-5"></div>
+</div>
+</div>
+</div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>
